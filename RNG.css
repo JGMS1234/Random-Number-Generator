@@ -1,0 +1,143 @@
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://asset.gecdesigns.com/img/wallpapers/beautiful-fantasy-wallpaper-ultra-hd-wallpaper-4k-sr10012418-1706506236698-cover.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 1svw;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+#Info {
+    padding: 2svh 2svw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5svh;
+    align-items: center;
+    justify-content: center;
+    width: 50svw;
+    height: 15svh;
+    min-width: 350px;
+    background-color: rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 1.5em;
+    position: relative;
+    align-self: flex-start;
+    margin-bottom: 20svh;
+}
+
+input {
+    padding: 0.8svh 0.8svw;
+    border-radius: 0.8rem;
+    border: 0.5px solid hsl(209, 87%, 43%);
+    background-color: hsla(0, 0%, 86%, 0.2);
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.15s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border: 0.5px solid hsl(209, 87%, 63%);
+}
+
+input::placeholder {
+    font-weight: 900;
+    text-align: center;
+    color: hsl(209, 55%, 53%);
+
+}
+
+input:hover {
+    scale: 1.05;
+    border: 0.5px solid hsl(209, 87%, 33%);
+    background-color: hsla(0, 0%, 96%, 0.2);
+}
+
+input:active {
+    scale: 0.95;
+    background-color: hsla(0, 0%, 76%, 0.2);
+    border: 0.5px solid hsl(209, 87%, 53%);
+}
+
+#Submit {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: hsla(0, 0%, 96%, 0.2);
+    backdrop-filter: blur(5px);
+    border: 0.5px solid hsl(209, 87%, 43%);
+    padding: 1.8svh 1svw;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.15s ease-in-out;
+}
+
+#Submit:hover {
+    cursor: pointer;
+    scale: 1.05;
+    border: 0.5px solid hsl(209, 87%, 33%);
+    background-color: hsla(0, 0%, 86%, 0.2);
+}
+
+#Submit:active {
+    scale: 0.95;
+    background-color: hsla(0, 0%, 76%, 0.2);
+    border: 0.5px solid hsl(209, 87%, 53%);
+}
+
+#Body {
+    padding: 10svh 10svw;
+    background-color: rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.Label,
+#display {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#RNG_Btn {
+    padding: 1svh 1svw;
+    width: 20svw;
+    border-radius: 1.5rem;
+    font-size: 1.5em;
+    transition: all 0.25s ease-in-out;
+    border: 2px solid hsla(209, 87%, 43%, 0.959);
+    background-color: hsla(0, 0%, 96%, 0.301);
+    cursor: pointer;
+}
+
+#RNG_Btn:hover {
+    /* border-width: thick; */
+    border-color: hsla(209, 87%, 33%, 0.959);
+    background-color: hsla(0, 0%, 86%, 0.301);
+    scale: 1.05;
+}
+
+#RNG_Btn:active {
+    scale: 0.95;
+    border-color: hsla(209, 87%, 53%, 0.959);
+    background-color: hsla(0, 0%, 76%, 0.301);
+}
